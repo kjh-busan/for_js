@@ -1,19 +1,17 @@
 class Human {
-  contructor() {
-    this.gender = 'KJH good';
+  constructor() {
+    this.gender = 'male';
   }
 
   printGender() {
-    // alert(this.gender);
-    // alert('Human');
-    console.log(this.gender);
+    console.log('this.game = ' + this.gender);
   }
 }
 
 class Person extends Human {
   constructor() {
     super();
-    this.name = 'KJH good';
+    this.name = 'KJH';
     // this.gender = 'female';
   }
 
