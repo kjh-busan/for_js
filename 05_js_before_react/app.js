@@ -7,21 +7,28 @@ button.addEventListener('click', showModalHandler);
 
 function showModalHandler() {
   if (modal) {
-    alert('이미 모달창 잇힝~*');
     return;
   }
 
   modal = document.createElement('div');
+  modal.className = 'modal';
   
   const modalText = document.createElement('p');
-  modalText.textContent = 'Are you Sure?';
+  modalText.textContent = 'マジで？Are you Sure?';
 
   const modalCancelAction = document.createElement('button');
   modalCancelAction.textContent = 'Cancel';
+  modalCancelAction.className = 'btn btn--alt';
   modalCancelAction.addEventListener('click', closeModalHandler);
+
+  const modalConfirmAction = document.createElement('button');
+  modalConfirmAction.textContent = 'Confirm';
+  modalConfirmAction.className = 'btn';
+  modalConfirmAction.addEventListener('click', closeModalHandler);
 
   modal.append(modalText);
   modal.append(modalCancelAction);
+  modal.append(modalConfirmAction);
 
   document.body.append(modal);
 
