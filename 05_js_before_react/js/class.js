@@ -1,10 +1,11 @@
 class Human {
-  constructor() {
-    this.gender = 'male';
-  }
+  gender = 'male';
+  // constructor() {
+  //   this.gender = 'male';
+  // }
 
   printGender() {
-    console.log('this.game = ' + this.gender);
+    console.log('gender = ' + this.gender);
   }
 }
 
