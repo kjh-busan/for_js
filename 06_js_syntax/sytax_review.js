@@ -5,3 +5,15 @@ console.log("Today: ", Today);
 const Today2 = "20210101";
 Today2.substr(0, 4) + "年" + Today2.substr(4, 2) + "月";
 console.log("Today2: ", Today2);
+
+
+function maskingEmail(email) {
+  const mask = "*".repeat(email.split("@")[0].length - 1);
+  console.log("mask: ", mask);
+  return email[0] + mask + email.slice(mask.length + 1, email.length);
+}
+
+maskingEmail("asd123456@naver.com");
+// mask - a********@naver.com
+
+console.log("maskingEmail(): ", maskingEmail("asd123456@naver.com"));
