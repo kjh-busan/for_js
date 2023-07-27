@@ -46,4 +46,9 @@ function masking(email) {
 
  var len = email.split('@')[0].length ;  // ******@gmail.com
 // var len = email.split('@')[0].length-3; // AB***@gamil.com
- return email.replace(new RegExp('.(?=.{0,' + len + '}@)', 'g'), '*');
+ return email.replace(new RegExp('.(?=.{0,' + len + '}@)', 'g'), '*'); 
+
+
+ const moment = require('moment');
+const today = moment();
+console.log(today.format());
