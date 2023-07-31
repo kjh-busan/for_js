@@ -41,9 +41,9 @@ function maskingCar(strCar) {
   return strCar.replace(pattern, "***");
 }
 
-// 마스킹 이메일 처리 //
+// マスキング処理마스킹 이메일 처리 //
 function masking(email) {
 
  var len = email.split('@')[0].length ;  // ******@gmail.com
 // var len = email.split('@')[0].length-3; // AB***@gamil.com
- return email.replace(new RegExp('.(?=.{0,' + len + '}@)', 'g'), '*'); 
+ return email.replace(new RegExp('.(?=.{0,' + len + '}@)', 'g'), '*');
